@@ -1,30 +1,9 @@
 {
   "name": "alektrion-new",
   "version": "1.0.0",
-  "description": "",
+  "description": "Alektrion",
   "main": "index.js",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
-    "del": "^5.1.0",
-    "gulp": "4.0.x",
-    "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-less": "4.0.x",
-    "gulp-minifier": "^3.5.0",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^2.0.0",
-    "gulp-sourcemaps": "2.6.x",
-    "gulp-webp": "^4.0.1",
-    "posthtml-include": "^1.4.3",
-    "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
-  },
   "scripts": {
-    // "test": "echo \"Error: no test specified\" && exit 1",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
@@ -40,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/Fedinyak/Alektrion/issues"
   },
-  "homepage": "https://github.com/Fedinyak/Alektrion#readme"
+  "homepage": "https://github.com/Fedinyak/Alektrion#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.5.1"
+  }
 }

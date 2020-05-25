@@ -1,0 +1,81 @@
+.header__wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.alektrion-logo {
+  width: 300px;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 45px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+.header__item:not(:first-child) {
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid @gray;
+    padding-bottom: 0;
+    padding-right: 20px;
+    margin-left: 10px;
+  }
+}
+
+.header__item:first-child {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    padding-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.header__title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.header__text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: @orange;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 12px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
