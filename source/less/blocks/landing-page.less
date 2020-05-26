@@ -1,0 +1,140 @@
+.landing-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.landing-page__img-wrap {
+  text-align: center;
+  width: 100%;
+}
+
+.landing-page__img-wrap img {
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.landing-page__title {
+  font-size: 18px;
+  line-height: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.landing-page__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.landing-page__form {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.landing-page__cost-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.landing-page__cost {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.landing-page__cost-total {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.landing-page__multiply {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.landing-page__form input {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 50px;
+  height: 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid @gray;
+}
+
+.landing-page__button-decrease,
+.landing-page__button-increase {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: @light-gray;
+}
+
+.landing-page__button-wrap {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: @light-orange;
+}
+
+.landing-page__button-cart {
+  padding-top: 3px;
+  padding-bottom: 2px;
+  width: 160px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: @orange;
+  color: @white;
+  font-size: 18px;
+}
