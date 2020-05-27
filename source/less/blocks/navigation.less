@@ -32,31 +32,40 @@
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
+  border-bottom: 1px solid @gray;
 
-@media (min-width: @tablet-width) {
-  .navigation__item {
+  @media (min-width: @tablet-width) {
     font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-bottom: none;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .navigation__item {
+  @media (min-width: @desktop-width) {
     font-size: 16px;
   }
 }
 
 .navigation__item--active {
-  padding-top: 5px;
-  padding-left: 13px;
-  margin-left: -13px;
-  padding-right: 13px;
-  margin-right: -13px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
   background-color: @orange;
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    padding-left: 13px;
+    margin-left: -13px;
+    padding-right: 13px;
+    margin-right: -13px;
+  }
 }
 
 .navigation__item--active a {

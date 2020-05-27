@@ -373,12 +373,14 @@ html {
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #d8d8d8;
 }
 @media (min-width: 660px) {
   .navigation__item {
     font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-bottom: none;
   }
 }
 @media (min-width: 960px) {
@@ -387,14 +389,24 @@ html {
   }
 }
 .navigation__item--active {
-  padding-top: 5px;
-  padding-left: 13px;
-  margin-left: -13px;
-  padding-right: 13px;
-  margin-right: -13px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
   background-color: #ed8b22;
   color: #ffffff;
+}
+@media (min-width: 660px) {
+  .navigation__item--active {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    margin-left: -13px;
+    padding-right: 13px;
+    margin-right: -13px;
+  }
 }
 .navigation__item--active a {
   color: #ffffff;
@@ -402,10 +414,8 @@ html {
 .banner {
   display: block;
   order: 3;
-  margin-left: -40px;
-  margin-right: -40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 @media (min-width: 660px) {
   .banner {
@@ -417,8 +427,6 @@ html {
     order: 1;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .banner img {
@@ -442,13 +450,17 @@ html {
   margin-top: -10px;
 }
 .product__item {
-  flex-basis: 45%;
+  flex-basis: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
 }
 @media (min-width: 660px) {
   .product__item {
     flex-basis: 33%;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 960px) {
@@ -457,6 +469,11 @@ html {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+.product__title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 @media (min-width: 660px) {
   .product__title {
@@ -474,7 +491,7 @@ html {
 }
 .product__text {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
 }
 @media (min-width: 660px) {
   .product__text {
@@ -845,6 +862,7 @@ html {
   font-size: 14px;
 }
 .landing-page {
+  width: 100%;
   padding-top: 5px;
   padding-bottom: 20px;
   order: 4;
@@ -973,6 +991,14 @@ html {
   padding-bottom: 10px;
   text-align: center;
   background-color: #fce5cf;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+@media (min-width: 660px) {
+  .landing-page__button-wrap {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .landing-page__button-cart {
   padding-top: 3px;
