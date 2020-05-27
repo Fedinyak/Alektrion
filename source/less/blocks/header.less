@@ -4,24 +4,31 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .alektrion-logo {
-  width: 300px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .header__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     max-height: 45px;
-  }
-
-  @media (min-width: @tablet-width) {
     padding-top: 10px;
     padding-bottom: 0;
   }
@@ -33,6 +40,12 @@
     padding-bottom: 0;
     padding-right: 20px;
     margin-left: 10px;
+  }
+}
+
+.header__item {
+  @media (max-width: @mobile-width-only) {
+    padding-right: 25px;
   }
 }
 
@@ -48,6 +61,8 @@
   display: block;
   margin-top: 0;
   margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 12px;
@@ -67,6 +82,8 @@
   margin-bottom: 4px;
   font-weight: 700;
   color: @orange;
+  font-size: 14px;
+  line-height: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;

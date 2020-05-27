@@ -1,9 +1,29 @@
 .banner {
   display: block;
-  width: 100%;
+  order: 3;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 1;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .banner img {
+  display: block;
   width: 100%;
   height: auto;
 }
