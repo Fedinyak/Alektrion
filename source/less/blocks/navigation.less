@@ -1,30 +1,91 @@
 .navigation {
+  position: relative;
   order: 2;
   width: 100%;
 }
 
+.navigation-mobile {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: @orange;
+  font-size: 20px;
+  font-weight: 700;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.navigation-mobile__menu {
+  background-color: @orange;
+  color: white;
+  position: relative;
+  padding-right: 30px;
+}
+
+.navigation-mobile__menu::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  width: 20px;
+  height: 3px;
+  background-color: @white;
+  box-shadow: 0 6px 0 0 @white, 0 12px 0 0 @white;
+}
+
+.navigation-mobile__bag {
+  text-align: left;
+  padding-top: 6px;
+  display: block;
+  color: @white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
 .navigation__list {
+  position: absolute;
+  width: 100vw;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: @white;
   display: flex;
   flex-direction: column;
   font-size: 14px;
   font-weight: 700;
-  margin-top: 4px;
+  margin-top: 0;
   margin-bottom: 40px;
-}
 
-@media (min-width: @tablet-width) {
-  .navigation__list {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-top: 4px;
     margin-bottom: 10px;
     font-size: 12px;
     flex-direction: row;
     justify-content: space-between;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .navigation__list {
+  @media (min-width: @desktop-width) {
     font-size: 16px;
   }
+}
+
+.navigation__list--close {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation__list--open {
+  display: flex;
 }
 
 .navigation__item {
@@ -49,25 +110,40 @@
 .navigation__item--active {
   padding-top: 10px;
   padding-bottom: 10px;
-
   padding-left: 0;
-  margin-left: 0;
   padding-right: 0;
+
+  margin-left: 0;
   margin-right: 0;
-  background-color: @orange;
-  color: @white;
+  background-color: @light-orange;
+  color: @orange;
 
   @media (min-width: @tablet-width) {
+    color: @white;
     padding-top: 5px;
     padding-bottom: 5px;
-
     padding-left: 13px;
-    margin-left: -13px;
     padding-right: 13px;
+
+    margin-left: -13px;
     margin-right: -13px;
+    background-color: @orange;
   }
 }
 
 .navigation__item--active a {
-  color: @white;
+  color: @orange;
+
+  @media (min-width: @tablet-width) {
+    color: @white;
+  }
 }
+
+// .sticky {
+//   position: fixed;
+//   top: 0;
+// }
+
+// .sticky + .banner-wrap {
+//   padding-block-start: 100px;
+// }
