@@ -26,17 +26,17 @@ navToggle.addEventListener("click", function() {
 
 // // меню
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   window.addEventListener("scroll", functionForSticky);
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("scroll", functionForSticky);
 
-//   var navbar = document.querySelector(".navigation");
-//   var sticky = navbar.offsetTop;
+  var navbar = document.querySelector(".navigation");
+  var sticky = navbar.offsetTop;
 
-//   function functionForSticky() {
-//     if (window.pageYOffset > sticky) {
-//       navbar.classList.add("sticky");
-//     } else {
-//       navbar.classList.remove("sticky");
-//     }
-//   }
-// });
+  function functionForSticky() {
+    if (window.pageYOffset > sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+});
