@@ -11,23 +11,30 @@
 }
 
 .landing-page__img-wrap {
-  text-align: center;
+  // text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .landing-page__img-wrap img {
   @media (max-width: @mobile-width-only) {
     width: 100%;
   }
+
+  align-self: center;
+  order: 2;
 }
 
 .landing-page__title {
   font-size: 18px;
   line-height: 22px;
+  order: 10;
 
   @media (min-width: @tablet-width) {
     font-size: 26px;
     line-height: 30px;
+    margin-bottom: 6px;
   }
 }
 
