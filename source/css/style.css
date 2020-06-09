@@ -874,7 +874,7 @@ html {
     min-height: 100px;
   }
 }
-@media (min-width: 440px) {
+@media (min-width: 425px) {
   .product-list__text-wrap {
     min-height: 60px;
   }
@@ -922,7 +922,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
 }
-@media (min-width: 440px) {
+@media (min-width: 425px) {
   .product-list__cost-wrap {
     margin-left: 120px;
   }
@@ -984,9 +984,9 @@ html {
   font-weight: 400;
   border: 1px solid #d8d8d8;
 }
-@media (min-width: 440px) {
+@media (min-width: 425px) {
   .product-list__form input {
-    width: 54px;
+    width: 52px;
   }
 }
 @media (min-width: 660px) {
@@ -1033,7 +1033,7 @@ html {
 .product-list__button-wrap {
   text-align: center;
 }
-@media (min-width: 440px) {
+@media (min-width: 425px) {
   .product-list__button-wrap {
     text-align: left;
     margin-left: 120px;
@@ -1055,7 +1055,7 @@ html {
   background-color: #dddddd;
   font-size: 14px;
 }
-@media (min-width: 440px) {
+@media (min-width: 425px) {
   .product-list__button-cart {
     margin-top: 10px;
     margin-bottom: 15px;
