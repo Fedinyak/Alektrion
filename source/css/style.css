@@ -221,7 +221,7 @@ html {
 }
 @media (min-width: 660px) {
   .column-aside {
-    width: 30%;
+    width: 28%;
   }
 }
 @media (min-width: 960px) {
@@ -256,6 +256,12 @@ html {
 @media (min-width: 660px) {
   .header__wrap {
     padding-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 960px) {
+  .header__wrap {
+    flex-wrap: wrap;
   }
 }
 .alektrion-logo {
@@ -274,7 +280,7 @@ html {
 }
 @media (min-width: 660px) {
   .header__list {
-    width: 300px;
+    padding-top: 13px;
   }
 }
 @media (min-width: 960px) {
@@ -284,7 +290,6 @@ html {
     max-height: 45px;
     padding-top: 10px;
     padding-bottom: 0;
-    width: 480px;
   }
 }
 @media (min-width: 960px) {
@@ -318,13 +323,14 @@ html {
   .header__title {
     font-size: 12px;
     line-height: 12px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
 @media (min-width: 960px) {
   .header__title {
     font-size: 12px;
     line-height: 16px;
+    padding-left: 10px;
   }
 }
 .header__text {
@@ -340,13 +346,14 @@ html {
   .header__text {
     font-size: 14px;
     line-height: 12px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
 @media (min-width: 960px) {
   .header__text {
     font-size: 14px;
     line-height: 16px;
+    padding-left: 10px;
   }
 }
 .navigation {
@@ -663,9 +670,15 @@ html {
   font-weight: 700;
 }
 .news__item {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 16px;
   padding-bottom: 14px;
+}
+@media (min-width: 960px) {
+  .news__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .news__time {
   color: #999999;
@@ -688,6 +701,12 @@ html {
     padding-right: 20px;
     padding-bottom: 20px;
     font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 960px) {
+  .bag-desktop {
+    font-size: 14px;
     line-height: 16px;
   }
 }
@@ -699,10 +718,19 @@ html {
   background-color: #ed8b22;
   color: #ffffff;
   border-radius: 4px;
-  min-width: 220px;
-  font-size: 18px;
-  margin-top: 7px;
-  margin-bottom: 10px;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+@media (min-width: 960px) {
+  .bag-desktop__button {
+    border-radius: 4px;
+    min-width: 220px;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
 }
 .search {
   width: 100%;
@@ -908,13 +936,18 @@ html {
 }
 @media (min-width: 660px) {
   .product-list__form {
-    padding-top: 15px;
+    padding-top: 4px;
     justify-content: space-between;
     display: flex;
     margin-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+  }
+}
+@media (min-width: 960px) {
+  .product-list__form {
+    padding-top: 15px;
   }
 }
 .product-list__cost-wrap {
@@ -941,8 +974,14 @@ html {
 }
 @media (min-width: 660px) {
   .product-list__cost {
+    font-size: 15px;
+  }
+}
+@media (min-width: 960px) {
+  .product-list__cost {
     font-size: 20px;
     margin-top: 0;
+    padding-top: 4px;
   }
 }
 .product-list__cost-total {
@@ -955,8 +994,14 @@ html {
 }
 @media (min-width: 660px) {
   .product-list__cost-total {
+    font-size: 14px;
+  }
+}
+@media (min-width: 960px) {
+  .product-list__cost-total {
     font-size: 16px;
     margin-top: 0;
+    padding-top: 2px;
   }
 }
 .product-list__multiply {
@@ -965,6 +1010,14 @@ html {
 @media (min-width: 660px) {
   .product-list__multiply {
     display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 3px;
+  }
+}
+@media (min-width: 960px) {
+  .product-list__multiply {
+    padding-top: 2;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -990,6 +1043,12 @@ html {
   }
 }
 @media (min-width: 660px) {
+  .product-list__form input {
+    font-weight: 700;
+    width: 54px;
+  }
+}
+@media (min-width: 960px) {
   .product-list__form input {
     font-weight: 700;
     font-size: 14px;
@@ -1062,6 +1121,12 @@ html {
   }
 }
 @media (min-width: 660px) {
+  .product-list__button-cart {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+@media (min-width: 960px) {
   .product-list__button-cart {
     margin-top: 0;
     margin-bottom: 0;
@@ -1228,9 +1293,6 @@ html {
   margin-right: 8px;
 }
 @media (min-width: 660px) {
-  .landing-page__button-increase {
-    margin-left: 0;
-  }
 }
 .landing-page__button-wrap {
   margin-top: 10px;

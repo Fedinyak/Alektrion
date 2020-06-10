@@ -22,9 +22,14 @@
 }
 
 .news__item {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 16px;
   padding-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .news__time {
