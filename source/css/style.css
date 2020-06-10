@@ -890,6 +890,11 @@ html {
   width: calc(100% - 100px);
   padding-left: 20px;
 }
+@media (min-width: 375px) {
+  .product-list__wrap {
+    padding-left: 12px;
+  }
+}
 @media (min-width: 660px) {
   .product-list__wrap {
     margin-left: 14px;
