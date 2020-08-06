@@ -234,6 +234,14 @@ html {
   padding: 0;
   list-style: none;
 }
+.tablet-hidden {
+  display: inline;
+}
+@media (min-width: 659px) {
+  .tablet-hidden {
+    display: none;
+  }
+}
 .button {
   display: inline-block;
   vertical-align: middle;
@@ -1109,8 +1117,8 @@ html {
   }
 }
 .product-list__button-cart {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   padding-top: 3px;
   padding-bottom: 2px;
   width: 130px;
@@ -1167,6 +1175,7 @@ html {
   font-size: 18px;
   line-height: 22px;
   order: 10;
+  margin-bottom: 4px;
 }
 @media (min-width: 660px) {
   .landing-page__title {

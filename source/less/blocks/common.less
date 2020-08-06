@@ -63,3 +63,11 @@
   padding: 0;
   list-style: none;
 }
+
+.tablet-hidden {
+  display: inline;
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+}
